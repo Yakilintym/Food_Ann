@@ -4,8 +4,6 @@ library(forecast)
 
 #Read in data
 Data <- read_excel("Thesis2Data.xlsx", sheet = "overall")
-
-
 Ricenn <- as.data.frame(Data$Rice)
 Acf(Ricenn)
 
@@ -26,7 +24,7 @@ length(x6) = 75
 length(Rice) = 75
 x <- cbind(Rice,x6,x5,x4,x3,x2,x1)
 x <- as.data.frame(x)
-View(x)
+
 
 #start cut from the last row without "NA"
 x <- x[1:69,]
